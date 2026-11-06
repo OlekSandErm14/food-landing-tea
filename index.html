@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilded Brews Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        a:link, a:visited {
+           color: white; 
+           text-decoration: none;
+        }
+
+        .teapot{
+            display: inline-block;
+            max-width: 500px;
+            max-height: 500px;
+        }
+
+        .socialmedia {
+            display: inline-block;
+        }
+
+        body {
+            font-family: 'Alexandria', sans-serif; 
+            font-size: 1rem;                  
+            color: beige;                   
+            line-height: 1.6;
+            margin-left: 96px;
+            margin-right: 96px;
+            margin-top: 40px;
+            margin-bottom: 40px;                 
+        }
+        span {
+            color:crimson;
+        }
+
+        strong{
+            color:brown;
+        }
+        notim{
+            color:darkgray
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navi{
+            display: flex;
+            gap: 92px;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .hero {
+            display: flex;
+            margin: 0px 96px;
+            justify-content: space-between;
+        }
+        .hero-text {
+            width: 50%
+        }
+
+        .hero-button{
+            background-color: rgba(210, 49, 102, 1);
+            color: white;
+            border-radius: 5px;
+            width: 165px;
+            height: 49px;
+            padding: 13px 50px 13px 50px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(10, 10, 10);">
+    <header>
+        <a href="##"><img height="52px" src="transparent-logo.png" alt="Logo of Gilded Brews"></a>
+        <nav class="navi">
+            <a href="#">Main</a>
+            <a href="#">About Us</a>
+            <a href="#">Trainers</a>
+            <a href="#">App</a>
+        </nav>
+        <nav>
+            <a href="#" class="socialmedia"><img width="36" src="Inst.png"></a>
+            <a href="#" class="socialmedia"><img width="36" src="Facebook.png"></a>
+            <a href="#" class="socialmedia"><img width="36" src="TikTok.png"></a>
+            <a href="#" class="socialmedia"><img width="36" src="YouTube.png"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h4>Every Cup Has a Golden Lining.</h4>
+                <h1 style="font-size: 58px; font-weight: 400;">Feel warm inside with our aromatic and delicious <span>biscuits</span> and <span>tea</span>!</h1>
+                <p style="color:rgb(90, 90, 90)">
+                    Gilded Brews elevates your daily tea ritual, <br>delivering rich, handcrafted blends designed to <br>turn ordinary moments into pure comfort.
+                </p>
+                <button class="hero-button">Buy Now</button>
+            </div>
+            <img class="teapot" src="wmremove-transformed.png" alt="Teapot pouring our refined tea into a cup." width="588px">
+        </section>
+        <section class="about">
+            <h1><notim>Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</notim></h1>
+        </section>
+        <h1 style="font-size: 70px" class="emoji">🫖</h1>
+        <h1 style="font-size: 70px" class="emoji">🍵</h1>
+        <h1 style="font-size: 70px" class="emoji">☕️</h1>
+    </main>
+</body>
+</html>
