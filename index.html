@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         a:link, a:visited {
            color: white; 
@@ -34,14 +37,14 @@
             margin-bottom: 40px;                 
         }
         span {
-            color:crimson;
+            color: rgb(13, 36, 23);
         }
 
         strong{
             color:brown;
         }
         notim{
-            color:darkgray
+            color:rgb(41, 41, 41)
         }
 
         header{
@@ -75,6 +78,32 @@
             border: none;
             cursor: pointer;
         }
+
+        .about{
+            display: flex;
+            text-align: center;
+            margin: 60px, 164px ;
+        }
+
+        .prodbut {
+            width: 48px;
+            height: 48px;
+            background-color: rgb(25, 25, 25, 0);
+            border: none;
+            cursor: pointer;
+        }
+
+        .products-list{
+            display: flex;
+        }
+
+        .product{
+            display: flex;
+            flex-direction: column;
+        }
+        .products{
+
+        }
     </style>
 </head>
 <body style="background-color:rgb(10, 10, 10);">
@@ -106,11 +135,48 @@
             <img class="teapot" src="wmremove-transformed.png" alt="Teapot pouring our refined tea into a cup." width="588px">
         </section>
         <section class="about">
-            <h1><notim>Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</notim></h1>
+            <h1 style="font-size: 53px;"><notim>Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</notim></h1>
         </section>
-        <h1 style="font-size: 70px" class="emoji">🫖</h1>
-        <h1 style="font-size: 70px" class="emoji">🍵</h1>
-        <h1 style="font-size: 70px" class="emoji">☕️</h1>
+        <span style="font-size: 75px; position: absolute; top: 928px; left: 167px;" class="emoji">🫖</span>
+        <span style="font-size: 70px; position: absolute; top: 1400px; right: 45%;" class="emoji">🍵</span>
+        <span style="font-size: 75px; position: absolute; top: 800px; right: 400px;" class="emoji">☕️</span>
+
+        <section>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h1>Our Products</h1>
+                <div>
+                    <button class="prodbut"><img src="prev.png" class="prodbut" alt="previous"></button>
+                    <button class="prodbut"><img src="next.png" class="prodbut" alt="next"></button>
+                </div>
+            </div>
+            <div>
+                <div class="products-list">
+                <div class="product">
+                    <img src="#">
+                    <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10; margin-top: -30px;">
+                        <h3 style="margin: 0; font-size: 26px;">
+                            Brown bread
+                        </h3>
+                        <p style="color: rgb(133, 133, 133);">
+                            Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
+                        </p>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;" >
+                                <h4 style="font-size: 26px;">
+                                    $19.55
+                                </h4>
+                                <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
+                                 text-decoration: line-through;">$22.55</span>
+                            </div>
+                 
+                            <button  type="button" class="hero-button">Buy Now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
