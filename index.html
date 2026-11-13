@@ -35,15 +35,15 @@
         }
         
         span {
-            color: rgb(13, 36, 23);
+            color: rgb(48, 137, 87);
         }
 
         strong{
-            color: brown;
+            color: rgb(99, 215, 149);
         }
         
         .notim{
-            color: rgb(41, 41, 41);
+            color: rgb(92, 92, 92);
         }
 
         header{
@@ -70,7 +70,7 @@
         }
 
         .hero-button{
-            background-color: rgba(210, 49, 102, 1);
+            background-color: rgb(32, 89, 57);
             color: white;
             border-radius: 5px;
             width: 165px;
@@ -84,7 +84,7 @@
         .about{
             display: flex;
             text-align: center;
-            margin: 60px 164px; /* Fixed: Removed illegal comma separator */
+            margin: 60px 164px;
         }
 
         .prodbut {
@@ -118,6 +118,14 @@
         .products{
             font-family: "Roboto", sans-serif;
         }
+
+        /* 
+        .tea-card-backdrop {
+            background-size: cover;
+            opacity: 0.60;
+            filter: brightness(0.9) contrast(0.95);
+        }
+        */
     </style>
 </head>
 <body style="background-color:rgb(10, 10, 10);">
@@ -338,6 +346,11 @@
                     </div>
             </div>
         </section>
+
+        <section class="contact">
+            <img src="horizon.jpeg" class="tea-card-backdrop">
+            <h1><span>Have Questions </span>in mind? Let us help you!</h1>
+        </section>
     </main>
 
     
@@ -354,7 +367,7 @@
 
         prevBtn.addEventListener('click', () => {
             const card = document.querySelector('.product');
-            const scrollAmount = card.offsetWidth + 130;
+            const scrollAmount = card.offsetWidth + 200;
             carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
         });
     </script>
