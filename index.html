@@ -99,6 +99,8 @@
             display: flex;
             gap: 20px;
             overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
 
        .product{
@@ -292,8 +294,69 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="product">
+                        <img src="download(7).jpeg" alt="Brown bread">
+                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10; margin-top: -30px;">
+                            <h3 style="margin: 0; font-size: 26px;">
+                                Brown bread
+                            </h3>
+                            <p style="color: rgb(133, 133, 133);">
+                                Bon Au Pain is a pioneer in the healthy fast food scene.
+                            </p>
+                            <div style="display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; padding: 0; margin-top: -10px;" >
+                                    <h4 style="font-size: 26px;">
+                                        $19.55
+                                    </h4>
+                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; text-decoration: line-through;">$22.55</span>
+                                </div>
+                                <button style="width: 100%; margin-top: 10px;" type="button" class="hero-button">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="download(6).jpeg" alt="Brown bread">
+                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10; margin-top: -30px;">
+                            <h3 style="margin: 0; font-size: 26px;">
+                                Brown bread
+                            </h3>
+                            <p style="color: rgb(133, 133, 133);">
+                                Bon Au Pain is a pioneer in the healthy fast food scene.
+                            </p>
+                            <div style="display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; padding: 0; margin-top: -10px;" >
+                                    <h4 style="font-size: 26px;">
+                                        $19.55
+                                    </h4>
+                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; text-decoration: line-through;">$22.55</span>
+                                </div>
+                                <button style="width: 100%; margin-top: 10px;" type="button" class="hero-button">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
+
+    
+    <script>
+        const carousel = document.querySelector('.products-list');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        nextBtn.addEventListener('click', () => {
+            const card = document.querySelector('.product');
+            const scrollAmount = card.offsetWidth + 20;
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const card = document.querySelector('.product');
+            const scrollAmount = card.offsetWidth + 120;
+            carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
