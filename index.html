@@ -7,9 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         a:link, a:visited {
            color: white; 
@@ -37,14 +34,14 @@
             margin-bottom: 40px;                 
         }
         span {
-            color: rgb(13, 36, 23);
+            color:crimson;
         }
 
         strong{
             color:brown;
         }
         notim{
-            color:rgb(41, 41, 41)
+            color:darkgray
         }
 
         header{
@@ -93,58 +90,16 @@
             cursor: pointer;
         }
 
-        /* Change .product-list to .products-list to match your HTML */
-        .products-list {
+        .products-list{
             display: flex;
-            gap: 25px;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            
-            /* Pulls the carousel out of your 96px body margin so cards bleed off-screen */
-            margin-left: -96px;
-            margin-right: -96px;
-            padding: 20px 96px;
-            scroll-padding-left: 96px;
-
-            /* Hides the scrollbar */
-            scrollbar-width: none;
-            -ms-overflow-style: none;
         }
-
-        .products-list::-webkit-scrollbar {
-            display: none;
-        }
-
-        .product {
-            flex: 0 0 320px; /* Fixes the entire card width to 320px */
-            border-radius: 24px;
-            scroll-snap-align: start;
-            transition: transform 0.3s ease;
-            overflow: hidden; /* Keeps image corners neatly clipped */
-        }
-
-        .product img {
-            width: 100%; /* Forces the image to match the exact 320px width of the bottom div */
-            height: 220px; /* Keeps every card image the exact same height */
-            object-fit: cover; /* Crops the image cleanly without stretching or squishing */
-            display: block;
-            border-radius: 20px 20px 0 0; /* Rounds only the top corners */
-        }
-
-
-        .product:hover {
-            transform: scale(1.02);
-        }
-
 
         .product{
-            width: 300px;
-            border-radius: 20px;
-            
+            display: flex;
+            flex-direction: column;
         }
         .products{
-            font-family: "Roboto", sans-serif;
+
         }
     </style>
 </head>
@@ -177,7 +132,7 @@
             <img class="teapot" src="wmremove-transformed.png" alt="Teapot pouring our refined tea into a cup." width="588px">
         </section>
         <section class="about">
-            <h1 style="font-size: 53px;"><notim>Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</notim></h1>
+            <h1><notim>Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</notim></h1>
         </section>
         <span style="font-size: 75px; position: absolute; top: 928px; left: 167px;" class="emoji">🫖</span>
         <span style="font-size: 70px; position: absolute; top: 1400px; right: 45%;" class="emoji">🍵</span>
@@ -187,128 +142,35 @@
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <h1>Our Products</h1>
                 <div>
-                    <button id="prevBtn" class="prodbut"><img src="prev.png" class="prodbut" alt="previous"></button>
-                    <button id="nextBtn" class="prodbut"><img src="next.png" class="prodbut" alt="next"></button>
+                    <button class="prodbut"><img src="prev.png" class="prodbut" alt="previous"></button>
+                    <button class="prodbut"><img src="next.png" class="prodbut" alt="next"></button>
                 </div>
             </div>
             <div>
-                <div class="products-list" style="gap: 25px;">
-                    <div class="product">
-                        <img src="images.jpeg" style="border-radius: 20px;">
-                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10;">
-                            <h3 style="margin: 0; font-size: 26px;">
-                                Brown bread
-                            </h3>
-                            <p style="color: rgb(133, 133, 133);">
-                                Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
-                            </p>
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="display: flex; align-items: center; padding: 0; margin-top: -36px;" >
-                                    <h4 style="font-size: 26px;">
-                                        $19.55
-                                    </h4>
-                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
-                                    text-decoration: line-through;">$22.55</span>
-                                </div>
-                    
-                                <button style="width: auto; margin-top: -20px;" type="button" class="hero-button">Buy Now</button>
+                <div class="products-list">
+                <div class="product">
+                    <img src="#">
+                    <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10; margin-top: -30px;">
+                        <h3 style="margin: 0; font-size: 26px;">
+                            Brown bread
+                        </h3>
+                        <p style="color: rgb(133, 133, 133);">
+                            Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
+                        </p>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;" >
+                                <h4 style="font-size: 26px;">
+                                    $19.55
+                                </h4>
+                                <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
+                                 text-decoration: line-through;">$22.55</span>
                             </div>
+                 
+                            <button  type="button" class="hero-button">Buy Now</button>
+
                         </div>
                     </div>
-                    
-                    <div class="product">
-                        <img src="download.jpeg" style="border-radius: 20px;">
-                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10;">
-                            <h3 style="margin: 0; font-size: 26px;">
-                                Brown bread
-                            </h3>
-                            <p style="color: rgb(133, 133, 133);">
-                                Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
-                            </p>
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="display: flex; align-items: center; padding: 0; margin-top: -36px;" >
-                                    <h4 style="font-size: 26px;">
-                                        $19.55
-                                    </h4>
-                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
-                                    text-decoration: line-through;">$22.55</span>
-                                </div>
-                    
-                                <button style="width: auto; margin-top: -20px;" type="button" class="hero-button">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product">
-                        <img src="download(1).jpeg" style="border-radius: 20px;">
-                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10;">
-                            <h3 style="margin: 0; font-size: 26px;">
-                                Brown bread
-                            </h3>
-                            <p style="color: rgb(133, 133, 133);">
-                                Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
-                            </p>
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="display: flex; align-items: center; padding: 0; margin-top: -36px;" >
-                                    <h4 style="font-size: 26px;">
-                                        $19.55
-                                    </h4>
-                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
-                                    text-decoration: line-through;">$22.55</span>
-                                </div>
-                    
-                                <button style="width: auto; margin-top: -20px;" type="button" class="hero-button">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product">
-                        <img src="download(2).jpeg" style="border-radius: 20px;">
-                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10;">
-                            <h3 style="margin: 0; font-size: 26px;">
-                                Brown bread
-                            </h3>
-                            <p style="color: rgb(133, 133, 133);">
-                                Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
-                            </p>
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="display: flex; align-items: center; padding: 0; margin-top: -36px;" >
-                                    <h4 style="font-size: 26px;">
-                                        $19.55
-                                    </h4>
-                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
-                                    text-decoration: line-through;">$22.55</span>
-                                </div>
-                    
-                                <button style="width: auto; margin-top: -20px;" type="button" class="hero-button">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product">
-                        <img src="download(3).jpeg" style="border-radius: 20px;">
-                        <div style="background-color:rgb(21, 21, 21); border-radius: 20px; padding: 24px; z-index: 10;">
-                            <h3 style="margin: 0; font-size: 26px;">
-                                Brown bread
-                            </h3>
-                            <p style="color: rgb(133, 133, 133);">
-                                Bon Au Pain is a pioneer in the healthy fast food scene.Bon 
-                            </p>
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="display: flex; align-items: center; padding: 0; margin-top: -36px;" >
-                                    <h4 style="font-size: 26px;">
-                                        $19.55
-                                    </h4>
-                                    <span style="font-size: 18px; color: rgb(133, 133, 133); margin-left: 10px; 
-                                    text-decoration: line-through;">$22.55</span>
-                                </div>
-                    
-                                <button style="width: auto; margin-top: -20px;" type="button" class="hero-button">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+                </div>
             </div>
             </div>
         </section>
