@@ -121,7 +121,6 @@
 
         .contact{
             margin-top: 150px;
-            font-family: ;
             background-image: linear-gradient(rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.6)), url("horize.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -136,16 +135,55 @@
             gap: 20px;
             font-family: 'Alexandria', sans-serif;
         }
+
+        .contact form{
+            display: flex;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 100px;
+            padding: 4px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        .contact form input {
+            flex-grow: 1;
+            border: none;
+            background-color: transparent;
+            color: rgb(48, 137, 87);
+            padding: 16px 24px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .contact form input::placeholder {
+            color: aliceblue;
+            opacity: 1;
+        }
+
+        .contact form button{
+            background-color: rgb(48, 137, 87);
+            color: aliceblue;
+            border-radius: 100px;
+            outline: none;
+            border: transparent;
+            cursor: pointer;
+            padding: 10px 28px;
+        }
+
+        footer{
+            
+        }
     </style>
 </head>
 <body style="background-color:rgb(10, 10, 10);">
     <header>
         <a href="#"><img height="52px" src="transparent-logo.png" alt="Logo of Gilded Brews"></a>
         <nav class="navi">
-            <a href="#">Main</a>
-            <a href="#">About Us</a>
-            <a href="#">Trainers</a>
-            <a href="#">App</a>
+            <a href="#hero">Main</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Q&A</a>
         </nav>
         <nav>
             <a href="#" class="socialmedia"><img width="36" src="Inst.png" alt="Instagram"></a>
@@ -170,11 +208,11 @@
         
         <section class="about">
             <h1 style="font-size: 53px;" class="notim">Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</h1>
+
+            <span style="font-size: 75px; position: absolute; top: 1728px; left: 767px;" class="emoji">🫖</span>
+            <span style="font-size: 70px; position: absolute; top: 1300px; right: 45%;" class="emoji">🍵</span>
+            <span style="font-size: 75px; position: absolute; top: 800px; right: 400px;" class="emoji">☕️</span>
         </section>
-        
-        <span style="font-size: 75px; position: absolute; top: 1728px; left: 767px;" class="emoji">🫖</span>
-        <span style="font-size: 70px; position: absolute; top: 1300px; right: 45%;" class="emoji">🍵</span>
-        <span style="font-size: 75px; position: absolute; top: 800px; right: 400px;" class="emoji">☕️</span>
 
         <section class="products">
             <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -369,6 +407,13 @@
             </form>
         </section>
     </main>
+
+    <footer>
+        <div>
+            <a href="#"><img height="52px" src="transparent-logo.png" alt="Logo of Gilded Brews"></a>
+
+        </div>
+    </footer>
 
     <script>
         const carousel = document.querySelector('.products-list');
