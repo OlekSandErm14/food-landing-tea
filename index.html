@@ -119,13 +119,23 @@
             font-family: "Roboto", sans-serif;
         }
 
-        /* 
-        .tea-card-backdrop {
+        .contact{
+            margin-top: 150px;
+            font-family: ;
+            background-image: linear-gradient(rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.6)), url("horize.png");
+            background-position: center;
+            background-repeat: no-repeat;
             background-size: cover;
-            opacity: 0.60;
-            filter: brightness(0.9) contrast(0.95);
+            min-height: 880px;
+            padding: 60px 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            font-family: 'Alexandria', sans-serif;
         }
-        */
     </style>
 </head>
 <body style="background-color:rgb(10, 10, 10);">
@@ -347,13 +357,19 @@
             </div>
         </section>
 
-        <section class="contact">
-            <img src="horizon.jpeg" class="tea-card-backdrop">
-            <h1><span>Have Questions </span>in mind? Let us help you!</h1>
+        <section class="contact" style="display: flex;">
+            <h1 style="color: rgb(64, 193, 0); font-size: 58px; font-weight: 400;">
+                <span style="color: rgb(85, 255, 0);">Have Questions</span> 
+                in mind? <br>Let us help you!
+            </h1>
+
+            <form>
+                <input type="text" placeholder="Enter your question...">
+                <button>Send</button>
+            </form>
         </section>
     </main>
 
-    
     <script>
         const carousel = document.querySelector('.products-list');
         const prevBtn = document.getElementById('prevBtn');
