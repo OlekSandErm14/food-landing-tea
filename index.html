@@ -31,7 +31,13 @@
             font-size: 1rem;                  
             color: beige;                   
             line-height: 1.6;
-            margin: 40px 96px;                 
+            margin: 40px 96px; 
+            scrollbar-width: none;
+            -ms-overflow-style: none; 
+        }
+
+        .body::-webkit-scrollbar {
+            display: none;
         }
         
         span {
@@ -172,7 +178,14 @@
         }
 
         footer{
-            
+            width: 100vw;
+            margin-left: -96px;
+            margin-right: -96px;
+            padding-left: 96px;
+            padding-right: 96px;
+            box-sizing: border-box;
+            background-color: rgba(21, 21, 21, 1);
+            margin-bottom: -40px;
         }
     </style>
 </head>
@@ -194,7 +207,7 @@
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-text">
                 <h4>Every Cup Has a Golden Lining.</h4>
                 <h1 style="font-size: 58px; font-weight: 400;">Feel warm inside with our aromatic and delicious <span>biscuits</span> and <span>tea</span>!</h1>
@@ -206,7 +219,7 @@
             <img class="teapot" src="wmremove-transformed.png" alt="Teapot pouring our refined tea into a cup." width="588">
         </section>
         
-        <section class="about">
+        <section class="about" id="about">
             <h1 style="font-size: 53px;" class="notim">Welcome to <strong>Gilded Brews</strong>, where we elevate your daily tea ritual into a luxurious sensory experience. Founded on a passion for <span>exceptional quality</span> and timeless tradition, we source the finest, <span>ethically grown tea leaves from prestigious estates around the world.</span> Every blend we create is a <span>masterpiece of flavor</span>, meticulously crafted to bring a touch of indulgence and sophistication to your cup. We believe that tea is more than just a beverage—it is a golden moment of pause, a celebration of wellness, and an everyday luxury that you deserve to savor.</h1>
 
             <span style="font-size: 75px; position: absolute; top: 1728px; left: 767px;" class="emoji">🫖</span>
@@ -214,7 +227,7 @@
             <span style="font-size: 75px; position: absolute; top: 800px; right: 400px;" class="emoji">☕️</span>
         </section>
 
-        <section class="products">
+        <section class="products" id="products">
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <h1>Our Products</h1>
                 <div>
@@ -395,7 +408,7 @@
             </div>
         </section>
 
-        <section class="contact" style="display: flex;">
+        <section class="contact" id="contact" style="display: flex;">
             <h1 style="color: rgb(64, 193, 0); font-size: 58px; font-weight: 400;">
                 <span style="color: rgb(85, 255, 0);">Have Questions</span> 
                 in mind? <br>Let us help you!
@@ -409,9 +422,35 @@
     </main>
 
     <footer>
-        <div>
-            <a href="#"><img height="52px" src="transparent-logo.png" alt="Logo of Gilded Brews"></a>
+        <div style="display: flex; justify-content: space-between; gap: 25px;">
+            <div style="width: 200px; margin-top: 50px; margin-bottom: 20px;">
+                <a href="#"><img height="52px" src="transparent-logo.png" alt="Logo of Gilded Brews"></a>
+                <p>Gilded Brews elevates your daily tea ritual, delivering handcrafted blends.</p>
 
+                <nav>
+                <a href="#" class="socialmedia"><img width="36" src="Inst.png" alt="Instagram"></a>
+                <a href="#" class="socialmedia"><img width="36" src="Facebook.png" alt="Facebook"></a>
+                <a href="#" class="socialmedia"><img width="36" src="TikTok.png" alt="TikTok"></a>
+                <a href="#" class="socialmedia"><img width="36" src="YouTube.png" alt="YouTube"></a>
+            </nav>
+            </div>
+            <div style="margin-top: 50px;">
+                <h4>MENU</h4>
+                <nav style="display: flex; flex-direction: column; gap: 10px">
+                    <a href="#hero">Main</a>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Q&A</a>
+                </nav>
+            </div>
+            <div style="margin-top: 50px;">
+                <h4>CONTACTS</h4>
+                <p>831.466.3000<br>info@gildbrew.com</p>
+            </div>
+            <div style="margin-top: 50px;">
+                <h4>LOCATION</h4>
+                <p>1347 Pacific Avenue, Suite 201<br>Santa Cruz, CA, 95060</p>
+            </div>
         </div>
     </footer>
 
